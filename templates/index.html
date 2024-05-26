@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Image and Text</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+    <button id="randomButton">明日のおやつは？</button>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#randomButton').click(function() {
+                $.get('/random', function(data) {
+                    $('#result').html(`<img src="/static/images/${data.image}" alt="Random Image"><p>${data.text}</p>`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
