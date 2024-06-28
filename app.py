@@ -12,8 +12,9 @@ image_texts = {
     'image6.jpg': 'トー横女子',
     'image7.jpg': 'チョコ',
     'image8.jpg': 'たまには過去の幸せな思い出に浸ってお酒を飲むのもいいでしょうね',
-    'image9.jpg': '芋的な何か'
-
+    'image9.jpg': '芋、あるいは芋女',
+    'image10.jpg': '後輩',
+    
 }
 
 @app.route('/')
